@@ -1,0 +1,12 @@
+index:
+    path: /  #all article
+    controller: App\Action\ShowBlogsController::index
+
+articleById:
+    path: /article/ #article?id=
+    controller: App\Action\ShowBlogsController::articleById
+
+articleByIdAndAuthor:
+    path: /article/  #article?id= & author=
+    controller: App\Action\ShowBlogsController::articleByIdAndAuthor
+

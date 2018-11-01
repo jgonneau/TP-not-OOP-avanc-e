@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des posts!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Liste des articles postés sur le blog :</h1>
+
+    {%  for post in posts %}
+
+        <div class="article" >
+
+            <h3>{{ post.title }}</h3>
+            <textarea width="300" height="200" contenteditable="false">{{ post.content }}</textarea>
+            <p>{{ post.author }} - {{ post.createdAt }}</p>
+
+        </div>
+
+
+    {% endfor %}
+</div>
+{% endblock %}
