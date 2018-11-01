@@ -1,3 +1,3 @@
-###Note !
+##NOTE !
 
-Some routes may not work
+Bad practices are in the comments
